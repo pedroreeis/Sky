@@ -13,7 +13,7 @@ module.exports = {
             //Para saber mais sobre Set, acesse https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Set
             
             let embed = new Discord.MessageEmbed()
-              .setTitle('Painel do Hyouka')
+              .setTitle('Painel de ajuda')
               .setDescription(`Olá <@${message.author.id}> seja bem vindo ao meu painel de ajuda!\n\nAtualmente eu tenho **${client.commands.size}** comandos`)
               .setTimestamp()
               .setThumbnail(client.user.avatarURL())

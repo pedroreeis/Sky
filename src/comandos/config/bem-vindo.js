@@ -7,8 +7,8 @@ module.exports = {
   category: 'Configuração',
   description: 'Toda vez que um usuario entrar no servidor o bot mandara uma mensagem',
   run: async (client, message, args, db) => {
-    if(message.author.id !== "474206298645331970" && !message.member.hasPermission('MANAGE_GUILD')) {
-            client.errorEmbed(`<@${message.author.id}> Você é fraco, lhe falta **Gerenciar Servidor**`)
+    if(message.author.id !== "640195412648788018" && !message.member.hasPermission('MANAGE_GUILD')) {
+            client.errorEmbed(`<@${message.author.id}>, foi identificado que a permissão **Gerenciar Servidor** não foi encontrada em você.`)
         }
     else  {
     switch(args[0]) {

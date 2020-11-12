@@ -5,7 +5,13 @@ module.exports = {
     aliases: ['latencia'],
     description: "Retorna a latencia do bot",
     run: async (client, message) => {
-       message.channel.send(`Pong - ${client.ws.ping}ms `)
+      const {MessageEmbed} = require('discord.js')
+      
+      const embed = new MessageEmbed()
+      .setColor("GREEN")
+      .setDescription(`Ping: ${client.ws.ping}**ms**`)
+      .setFooter(`Ping Request Command`).setTimestamp()
+      
+      message.channel.send(embed)
     }
 }
-//${msg.createdTimestamp - message.createdTimestamp}ms
