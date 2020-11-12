@@ -1,4 +1,4 @@
-//require('./glitch.js')
+require('./glitch.js')
 
 const mongoose = require('mongoose')
 const { Client, Collection, MessageEmbed } = require("discord.js");

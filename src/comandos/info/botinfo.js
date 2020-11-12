@@ -6,7 +6,7 @@ module.exports = {
     usage: 'botinfo',
     aliases: ['info'],
     category: 'Info',
-    description: 'Mostra todas minhas informações',
+    description: 'Mostra todas minhas informações kk',
     run: async (client, message, args, db) => {
     
     let cpu = process.cpuUsage()
