@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://cdn.glitch.com/3e9304e0-23b6-4d34-8ca4-92f7ba536183%2Fhyoukakk.jpg?v=1602441076647" width="300" style="border-radius: 50%;"">
 </div>
-<h1 align="center">Hyouka</h1>
+<h1 align="center">Sky</h1>
 
 <p align="center">
   Um bot open-source feito em Node.js, sendo Discord.js como lib principal, MongoDB como banco de dados, e express para servidor-web
@@ -25,5 +25,5 @@
 
 Caso você se separe com o erro **Invalid Ouath Redirect** em seu dashboard_callback_uri coloque seu url inteiro exemplo:
 ```
-DASHBOARD_CALLBACK_URL=https://hyouka-web.glitch.me/auth/discord/redirect/
+DASHBOARD_CALLBACK_URL=
 ```
