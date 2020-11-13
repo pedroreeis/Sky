@@ -17,7 +17,7 @@ passport.deserializeUser(async (id, done) => {
 
 passport.use(
     new DiscordStrategy({ //Cria uma stragey do passport
-        clientID: 674738385629478939, //id do client
+        clientID: "674738385629478939", //id do client
         clientSecret: "zItjvOzkcUJ8JxWtj2v2x7ImDSszwUhz",//token do client(não do bot mas sim do client)
         callbackURL: "https://skydiscord-web.herokuapp.com/auth/discord/redirect", //callback do oauth
         scope: ['identify', 'guilds'] //escopos, você pode adicionar mais, mas so vou usar esse
