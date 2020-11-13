@@ -1,7 +1,15 @@
-const Discord = require('discord.js');
-const formatDate = require('moment');
-formatDate.locale('pt-br')
-exports.run = async (client, message, args, db) => {
+module.exports = {
+  name: 'userinfo',
+  example: "userinfo @rogerincabeçadepika",
+  usage: 'userinfo (member)',
+  aliases: ['ui', 'infouser'],
+  category: 'Utilidade',
+  description: 'Pegue todas as informações de um usuario.',
+  run: async (client, message, args, db) => {
+    const Discord = require('discord.js');
+    const formatDate = require('moment');
+    formatDate.locale('pt-br')
+    
     let mentioned = message.mentions.members.first() || message.guild.members.cache.find(member => member.user.username.toLowerCase() === args.join(' ').toLowerCase()) || message.guild.members.cache.find(member => member.displayName.toLowerCase() === args.join(' ').toLowerCase()) || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(member => args.length === 0 ? member === message.member : member.user.username.toLowerCase().includes(args.join(' ').toLowerCase())) || message.guild.members.cache.find(member => args.length === 0 ? member === message.member : member.displayName.toLowerCase().includes(args.join(' ').toLowerCase())) || message.guild.members.cache.get(args[0]) || message.member
     const statusEmoji = {
       online: "<a:online:688177322314170470>",
@@ -38,12 +46,6 @@ exports.run = async (client, message, args, db) => {
       .setThumbnail(mentioned.user.displayAvatarURL({ dynamic: true }))
 
       message.channel.send(userinfoEmbed)
+    
   }
-module.exports = {
-    name: 'userinfo',
-    example: "userinfo @rogerincabeçadepika",
-    usage: 'userinfo (member)',
-    aliases: ['ui', 'infouser'],
-    category: 'Utilidade',
-    description: 'Pegue todas as informações de um usuario.',
 }
