@@ -6,7 +6,7 @@ module.exports.run=  (client) => {
     client.commands = new Collection();//cria loc
     client.aliases = new Collection();
 
-  mongoose.connect(`mongodb+srv://zadduser:020207Pedro@cluster0.iodj9.mongodb.net/<dbname>?retryWrites=true&w=majority`, { //loga no mongodb
+  mongoose.connect(`mongodb+srv://zadduser:020207Pedro@cluster0.iodj9.mongodb.net/Sky?retryWrites=true&w=majority`, { //loga no mongodb
     useNewUrlParser: true, 
     useUnifiedTopology: true 
   }).then(() => {
