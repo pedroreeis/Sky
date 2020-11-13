@@ -25,10 +25,10 @@ module.exports = {
       .setTitle(`<:bot_badgeearlysupporter:590944204411109392>  ${client.user.tag}`)
       .setDescription(` > Tag: **${client.user.tag}**\n > Id: **${client.user.id}**\n`)
       .addField('Informações Basicas', `
-        <:servers:765018069038530570> **Servidores:** ${servsize}
-        <:emoji_18:764564237904773120> **Usuários:** ${usersize}
-        <:hashtag:765016609185202177> **Canais**: ${client.channels.cache.size}
-        <:terminal:765225432911708160> **Comandos: **${client.commands.size}`, true)
+        <:eoricareca:755085912442142801> **Servidores:** ${servsize}
+        <:lab_daora2:658757321110847499> **Usuários:** ${usersize}
+        <a:lab_pepoping:757310859859984396> **Canais**: ${client.channels.cache.size}
+        <:graf:700440923011809340> **Comandos: **${client.commands.size}`, true)
         .addField('Informações de Desenvolvimento', `
         <:lang_js:427101545478488076>  **Linguagem:** JavaScript
         <:eori:755085583990390845>  **Banco de Dados:** MongoDB
