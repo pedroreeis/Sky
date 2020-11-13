@@ -14,7 +14,7 @@ const GuildConfig = new mongoose.Schema({
     prefix: {
         type: String,
         required: true,
-        default: "h."
+        default: "sky!"
     },
   
     config: {
