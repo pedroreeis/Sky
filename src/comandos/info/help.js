@@ -12,7 +12,7 @@ module.exports = {
             const embed2 = new Discord.MessageEmbed()
             .setColor(0x2F3136)
             .setTitle(`Central de Ajuda`)
-            .setDescription(` > Website: [https://google.com](clique aqui) \n > Github: [https://github.com/queendeveloperbr/Sky](clique aqui)`)
+            .setDescription(` > Website: [clique aqui](https://skydiscord-web.herokuapp.com/) \n > Github: [clique aqui](https://github.com/queendeveloperbr/Sky)`)
             message.channel.send(embed2)
         }
       
