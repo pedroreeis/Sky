@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const formatDate = require('moment');
 formatDate.locale('pt-br')
-exports.run = async (client, message, args) => {
+exports.run = async (client, message, args, db) => {
     let mentioned = message.mentions.members.first() || message.guild.members.cache.find(member => member.user.username.toLowerCase() === args.join(' ').toLowerCase()) || message.guild.members.cache.find(member => member.displayName.toLowerCase() === args.join(' ').toLowerCase()) || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(member => args.length === 0 ? member === message.member : member.user.username.toLowerCase().includes(args.join(' ').toLowerCase())) || message.guild.members.cache.find(member => args.length === 0 ? member === message.member : member.displayName.toLowerCase().includes(args.join(' ').toLowerCase())) || message.guild.members.cache.get(args[0]) || message.member
     const statusEmoji = {
       online: "<a:online:688177322314170470>",

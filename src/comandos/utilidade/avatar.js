@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-module.exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args, db) => {
     var membro = message.mentions.users.first() || client.users.cache.get(args[0]) || message.author
     var avatarpng = membro.avatarURL({ format: 'png', dynamic: false, size: 1024}) 
     var avatargif = membro.avatarURL({ format: 'png', dynamic: true, size: 1024}) 
