@@ -1,14 +1,14 @@
 const Discord = require('discord.js')
 module.exports = {
-    name: 'prefix',
-    usage: 'prefix <prefixo>',
-    aliases: ['prefixo', 'setprefix'],
+    name: 'prefixo',
+    usage: 'prefixo <prefixo>',
+    aliases: ['prefix', 'setprefix', 'setarprefix', 'setarprefixo'],
     category: 'Configuração',
-    description: 'Altera o prefixo para cada servidor!',
-    exemple: 'prefix !',
+    description: 'Altere o prefixo no servidor que o comando foi dado.',
+    exemple: 'prefixo !',
     run: async (client, message, args, db) => {
         if(!message.member.hasPermission('MANAGE_GUILD')  || message.author.id !== "640195412648788018") {
-            client.errorEmbed(`<@${message.author.id}>, foi identificado que a permissão **Gerenciar Servidor** não foi encontrada em você.`)
+            client.errorEmbed(`<@${message.author.id}>, foi identificado que a permissão **MANAGE_SERVER** não foi encontrada em você.`)
         }
         else{
             if(!args[0]){
@@ -17,7 +17,7 @@ module.exports = {
             else {
                 const prefixo = args[0]
                 const newPrefix = await db.guildSchema.findOneAndUpdate({guildId: message.guild.id }, { $set: {prefix: prefixo} }, {new: true} )
-                message.channel.send(`Prefixo alterado para ${newPrefix.prefix}`)
+                client.simpleEmbed(`Prefixo alterado para ${newPrefix.prefix}`)
             }
         }
     }
