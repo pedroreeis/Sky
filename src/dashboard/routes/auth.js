@@ -4,7 +4,7 @@ const passport = require("passport")
 router.get('/discord', passport.authenticate('discord'));
 
 router.get("/discord/redirect", passport.authenticate('discord'), (req, res) => {
-    res.redirect('https://hyouka-web.glitch.me/dashboard')
+    res.redirect('https://skydiscord-web.herokuapp.com/dashboard')
 })
 
 module.exports = router

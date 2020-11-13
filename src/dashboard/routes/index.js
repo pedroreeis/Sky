@@ -26,7 +26,7 @@ router.get('/logout', async (req, res) => {
     await res.redirect("/");
 })
 router.get('/invite', (req, res) => {
-  res.redirect('https://discord.com/api/oauth2/authorize?client_id=542665568788938752&permissions=8&redirect_uri=http%3A%2F%2Fhyouka-web.glitch.me%2Fauth%2Fdiscord%2Fredirect&scope=bot')
+  res.redirect('https://discord.com/api/oauth2/authorize?client_id=674738385629478939&permissions=8&scope=bot')
 })
 router.use("/auth", auth)
 router.use("/dashboard", checkAuth, dashboard)
