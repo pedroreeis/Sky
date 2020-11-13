@@ -40,5 +40,5 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/', index) //pasta de rotas
 
 app.listen(process.env.PORT, () => {
-  console.log(`Dashboard inicializada com sucesso. PORT: ${process.env.PORT}`)
+  console.log(`Dashboard inicializada com sucesso.`)
 })//liga servidor

@@ -21,7 +21,7 @@ const eventFiles = readdirSync(join(__dirname, "src/eventos")).filter((file) => 
     let eventName = file.split(".")[0]; 
     client.on(eventName, (...args) => event.run(client, ...args))
   }
-  client.login(process.env.BOT_TOKEN);
+  client.login(require("./config.json").token);
 module.exports = client
 
 require('./src/dashboard/server.js')
