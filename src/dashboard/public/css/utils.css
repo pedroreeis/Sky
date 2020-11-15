@@ -1,7 +1,7 @@
 :root{
-  --primary: #11F27D;
-  --primaryShadow: #0EC466;
-  --primaryActive: #0BA153;
+  --primary: #56006b;
+  --primaryShadow: #7b0ec4;
+  --primaryActive: #830ba1;
   --discordPrimary: #7289da;
   --backgroundColor: #313338;
 }
@@ -118,7 +118,7 @@ button{
   border-color: var(--primaryShadow);
 }
 .btn-primary:focus{
-  box-shadow: 0 0 0 0.2rem rgba(17, 242, 126, .5);
+  box-shadow: 0 0 0 0.2rem rgba(197, 17, 242, 0.5);
 }
 .btn-primary:active{
   background-color: var(--primaryActive) !important;

@@ -94,14 +94,14 @@
 .guild-add{
   margin: 6px;
   font-size: 30px;
-  color: #43b581;
+  color: #5d178b;
   text-align: center;
   padding-top: 5px;
   background-color: #36393f;
   border-radius: 50%;
 }
 .guild-add:hover{
-  background-color: #43b581;
+  background-color: #8743b5;
   color: #fff;
 }
 
