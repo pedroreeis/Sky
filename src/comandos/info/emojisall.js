@@ -18,6 +18,7 @@ module.exports = {
     .setFooter(`Página ${pagina} de ${totalPages} `, message.author.displayAvatarURL())
     .setAuthor('Meus emojis', client.user.displayAvatarURL())
     .setThumbnail(client.user.displayAvatarURL())
+
     message.channel.send(embed).then(async ser => {
 
         if(servers.cache.size > 10) {
