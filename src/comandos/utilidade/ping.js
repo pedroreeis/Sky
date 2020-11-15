@@ -1,6 +1,6 @@
 module.exports = {
     name: "ping",
-    category: "Info",
+    category: "Utilidade",
     usage: 'ping',
     aliases: ['latencia'],
     description: "Retorna a latencia do bot",
