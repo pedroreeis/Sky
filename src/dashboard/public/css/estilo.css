@@ -1,0 +1,169 @@
+#home {
+	background: #32343a;
+	color: white;
+	border-bottom: 1px solid #2c2e33;
+}
+
+.caixa {
+	padding: 60px 0;
+	background: #32343a;
+	border-bottom: 1px solid #2c2e33;
+}
+
+.caixa2 {
+	padding: 60px 0;
+	color: white;
+	background: #32343a;
+	border-bottom: 1px solid #2c2e33;
+}
+
+@-webkit-keyframes pulse {
+	25% {
+	  -webkit-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+	75% {
+	  -webkit-transform: scale(0.8);
+	  transform: scale(0.8);
+	}
+  }
+  
+@keyframes pulse {
+	25% {
+	  -webkit-transform: scale(1.2);
+	  -ms-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+  }
+  
+.pulse {
+	display: inline-block;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+  
+.pulse:hover {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+  #corpo {
+	margin: 6rem 1rem;
+	min-height: 100vh;
+	border-radius: 0.5rem;
+	font-size: 1.4rem
+  }
+  
+  .tipos {
+	background: var(--cinza-escuro);
+	border-radius: 0.5rem;
+	padding: 1rem 0;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid var(--meio-branco);
+	cursor: pointer
+  }
+  
+  .tipos:hover {
+	background: var(--cinza-escuro-opaco);
+  }
+  
+  .tipos strong {
+	font-family: 'Ubuntu Mono', sans-serif;
+	color: var(--claro);
+	line-height: 3rem;
+	padding: 0 1rem;
+  }
+  
+  .qtd-comandos-do-tipo {
+	border-radius: 50rem;
+	background: var(--cinza);
+	font-size: 0.9em;
+	font-weight: 200;
+	line-height: 2em;
+	min-width: 2em;
+	text-align: center;
+	float: right;
+	margin-right: 1rem;
+  }
+  
+  .comandos-do-tipo {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	margin-bottom: 0.5rem;
+	display: none;
+	cursor: auto;
+  }
+  
+  .comandos-do-tipo ul {
+	border-radius: 0.5rem;
+	background: var(--cinza);
+	margin-bottom: 0.5rem;
+	padding: 1rem;
+  }
+  
+  .comandos-do-tipo ul li.li-esq {
+	display: inline-block;
+	width: calc(40% - 1rem);
+	border-right: 1px solid var(--meio-branco);
+	text-align: center;
+	height: 100%;
+	vertical-align: middle;
+	padding-right: 1rem;
+  }
+  
+  .comandos-do-tipo ul li.li-dir {
+	display: inline-block;
+	width: calc(60% - 1.3rem);
+	border-left: 1px solid var(--meio-branco);
+	margin-left: -0.3rem;
+	vertical-align: middle;
+	padding-left: 1rem;
+	font-weight: lighter;
+  }
+  
+  .prefix {
+	opacity: 0.4;
+  }
+  
+  .name-comando {
+	word-wrap: break-word;
+  }
+  
+  .aliases-comando {
+	opacity: 0.6;
+	font-size: 0.9em;
+	word-wrap: break-word;
+  }
+  
+  .resp-calculator {
+	color: var(--avermelhado);
+	font-weight: normal;
+  }
+  
+  .normal-weight {
+	font-weight: normal;
+  }
+  
+  @media (min-width: 800px) {
+	#cabecalho {
+	  padding: 0 2rem;
+	}
+  
+	#corpo {
+	  max-width: 70rem;
+	  margin: 6rem auto;
+	}
+  }
