@@ -28,7 +28,8 @@
     "node-os-utils": "^1.3.2",
     "os-utils": "^0.0.14",
     "passport": "^0.4.1",
-    "passport-discord": "^0.1.4"
+    "passport-discord": "^0.1.4",
+    "search-npm-registry": "^2.0.3"
   },
   "engines": {
     "node": "12.x"
