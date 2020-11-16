@@ -13,7 +13,7 @@ module.exports = (client, message) => {
           let embed = new MessageEmbed()
               .setTitle(`**Ops... Alguma coisa deu errado.**`)
               .setDescription(`${description}`)
-              .setColor(0x2F3136)
+              .setColor('RED')
               .setTimestamp()
 
           message.channel.send(embed)
