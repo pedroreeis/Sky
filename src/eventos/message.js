@@ -16,6 +16,12 @@ module.exports.run = async (client, message) => {
     db.user = await client.getUser(message.author)
     db.guildSchema = GuildSchema
     db.userSchema = UserSchema
+
+    const embed = new MessageEmbed()
+    embed.setTitle(`Olá, eu sou o sky 🎈!`)
+    embed.setDescription(`Sou um bot multi funcional para seu servidor ter vida 😉! \n 
+    Para acessar meus comandos e me configurar acesse meu website 📰: [clique aqui](https://skydiscord-web.herokuapp.com/) \n Tenho varias funções que estão vindo, então recomendo passar no meu servidor discord [clique aqui](https://discord.gg/9Bwj9CrNh8)!`)
+    if(message.content.includes(client.user.id)) return message.channel.send(embed)
   
   
   if(!db.guild) {//se o servidor não estiver registrado ele registra
