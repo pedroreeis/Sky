@@ -7,7 +7,8 @@ module.exports = {
     description: "Comando privado",
     run: async (client, message, args, db) => {
       if (message.author.id == "640195412648788018") {
-      let kibes = client.guilds.cache.get('425864977996578816').emojis.cache.map(x => x)
+          let servidork = args[0]
+      let kibes = client.guilds.cache.get(servidork).emojis.cache.map(x => x)
       for(let x = 0; x < kibes.length; x++) {
           let kibe = kibes[x]
           let url = `https://cdn.discordapp.com/emojis/${kibe.id}.${kibe.animated ? 'gif' : 'png' }`
