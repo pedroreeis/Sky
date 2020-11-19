@@ -11,7 +11,7 @@
         <header class="text-center py-4 px-2" style="background-color: #2c2e33;">     
           <h4 class="pt-2"><%=guild.name%></h4>
         </header>
-        <a href="/dashboard" class="pt-2" style="margin-left: 3px;">Voltar</a>
+        <a href="/dashboard" class="pt-2" style="margin-left: 10px;">Voltar</a>
       </div>
       
       <div id="page-content-wrapper" style="width: 100%;">
@@ -24,7 +24,7 @@
           <img src="https://cdn<%=guild.id%>" alt="">
           <form id="save" method="POST" autocomplete="off" action="#" enctype="application/x-www-form-urlencoded">
             <input type="text" id="prefix" class="form-control" name="prefix" placeholder="<%=guildInfo.prefix%>" value="<%=guildInfo.prefix%>"/>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Enviar</button>
           </form>
         </div>
       </div>
