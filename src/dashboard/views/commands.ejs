@@ -27,8 +27,8 @@
                                 <th scope="col">Example</th>
                               </tr>
                             </thead>
-                          <%comandos.forEach((comando) => {%>
                               <tbody>
+                          <%comandos.forEach((comando) => {%>
                                 <tr>
                                   <td><%=comando.name%></td>
                                   <td><%=comando.description%></td>
@@ -42,8 +42,8 @@
                                       <td>Nada</td>
                                     <%}%>
                                 </tr>
-                              </tbody>
                           <%})%>
+                        </tbody>
                         </table>
                           <p id="notfound" style="display: none;">Não foi encontrado o comando inserido</p>
                         
