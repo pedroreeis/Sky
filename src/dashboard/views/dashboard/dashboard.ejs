@@ -16,13 +16,16 @@
             <% if (guild.icon) { %>
             <div class="card text-white bg-dark mb-3">
               <div class="card-body">
-                <h5 class="card-title"><img src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>.png?size=512" width="125"> <br> <%=guild.name%></h5>
+                <h5 class="card-title"><img src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>.png?size=512" width="95"> <br> <%=guild.name%></h5>
                 <p class="card-text"><a href="/dashboard/guilds/<%=guild.id%>" style="color: #310058;">Editar</a></p>
               </div>
             </div>
             <% } else { %>
-              <div class="ellipsis guild-blue guild-itens">
-                  <a href="https://skydiscord-web.herokuapp.com/dashboard/guilds/<%=guild.id%>" class="guild-acr pt-3" style="font-size: 12px;" title="<%=guild.name%>" ><%= guild.name.replace(/\w+/g, name => name[0]).replace(/\s/g, '') %></a>
+              <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                  <h5 class="card-title"><%=guild.name%></h5>
+                  <p class="card-text"><a href="/dashboard/guilds/<%=guild.id%>" style="color: #310058;">Editar</a></p>
+                </div>
               </div>
             <%}%>
         <%});%>
