@@ -9,31 +9,18 @@
     
     
     <div class="container">
-      <h3 class="display-3">Comandos</h3>
-      <p class="lead">Todos os Comandos.</p>
         <div class="row">
-            <div class="col-md-3 mb-2">
-              <h1>Categorias</h1>
-              <br>
-              <div id="list-modules" class="list-group menu">
-                  <button class="bcomando bcomando-active" id="command">Todos os comandos</button>
-                  <% categorias.forEach((categoria) => {%> <!-- forEach nas categorias -->
-                    <button class="bcomando" id="<%=categoria%>"><%=categoria%></button><!-- o id é pra usar o attr e mostrar os comandos da categoria -->
-                  <%})%>
-              </div>
-            </div>
             
-            <div class="col-md-9">
+            <div class="col-md-9" style="margin-left: 10%; margin-top: 5%;">
               <div class="row">
                 <div class="col-12 pr-0 mb-2">
-                  <h1>Comandos</h1>
                     <div class="form-group">
-                        <input autocomplete="off" class="form-control form-control-lg cmd-input" id="search-input" type="text" placeholder="Pesquisar">
+                        <input autocomplete="on" class="form-control form-control-lg cmd-input" id="search-input" type="text" placeholder="Digite aqui o nome do comando buscado.">
                     </div>
                 </div>
                 <div class="col-12 pr-0">
                         <div id="categorias">
-                          <%comandos.forEach((comando) => {%> <!--Da um forEach nos comandos -->
+                          <%comandos.forEach((comando) => {%>
                             <div class="card mb-2  border-secondary rounded command <%=comando.category%>"><!-- Tem que colocar o nome da categoria pra o evento de mostra categoria -->
                               <div class="<%=comando.name%>Cmd card-header" data-toggle="collapse" data-target="#<%=comando.name%>" aria-expanded="true" aria-controls="<%=comando.name%>" style="background-color: #212529;padding: 20px;"> <!-- Esses arias são do aside do bootstrap, faz de outro jeito pra não ficar igual o meu -->
                                 <%=comando.name%> 
@@ -47,7 +34,7 @@
                               </div>
                           
                               <div id="<%=comando.name%>" class="collapse">
-                                <div class="card-body" style="background-color: #212529;">
+                                <div class="card-body" style="background-color: #23142b;">
                                   <p><%=comando.description%></p>
                                   <%if(comando.aliases) {%>
                                   <span class="bold">Sinônimos: </span><span><%=comando.aliases.join(', ')%></span>
@@ -64,7 +51,7 @@
                             </div>
                           <%})%>
                           
-                          <p id="notfound" style="display: none;">Comando nao encontrado</p>
+                          <p id="notfound" style="display: none;">Não foi encontrado o comando inserido</p>
                         
                         </div>
                 </div>

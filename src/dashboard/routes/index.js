@@ -18,6 +18,10 @@ router.get('/comandos', (req, res) => {
         user: req.user
     })
 })
+
+router.get('/creditsdash', (req, res) => {
+    res.send("Matheuuus#7083")
+})
 router.get('/login', (req, res) => {
     res.redirect('/auth/discord')
 })
