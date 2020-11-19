@@ -11,9 +11,24 @@
         <%- include ('../components/navbar.ejs') %>
   
         <div class="jumbotron text-center bg-transparent">
-          <h1 class="display-3">Sky Dashboard</h1>
+          <h1 class="display-3">Escolha um servidor</h1>
           <hr>
-          <p class="lead">Escolha um servidor</p>
+          <% guilds.forEach((guild) => { %>
+            <% if (guild.icon) { %>
+            <div class="text-center guild-items mt-2">
+              <a href="/dashboard/guilds/<%=guild.id%>">
+                <img class="guild-image user-avatar" src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>.png?size=2048" alt="<%=guild.name%>" title="<%=guild.name%>">
+              </a>
+            </div>
+            <% } else { %>
+              <div class="ellipsis guild-blue guild-itens">
+                  <a href="https://skydiscord-web.herokuapp.com/dashboard/guilds/<%=guild.id%>" class="guild-acr pt-3" style="font-size: 12px;" title="<%=guild.name%>" ><%= guild.name.replace(/\w+/g, name => name[0]).replace(/\s/g, '') %></a>
+              </div>
+            <%}%>
+        <%});%>
+        <a href="/invite">
+            
+        </a>
           
         </div>
         
