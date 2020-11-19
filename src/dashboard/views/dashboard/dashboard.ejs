@@ -16,10 +16,9 @@
           <% guilds.forEach((guild) => { %>
             <% if (guild.icon) { %>
             <div class="card mb-3">
-              <img src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>.png" class="card-img-top" alt="<%=guild.name%>">
               <div class="card-body">
                 <h5 class="card-title" style="color: black;"><%=guild.name%></h5>
-                <p class="card-text"><a href="/dashboard/guilds/<%=guild.id%>" style="color: black;">Editar</a></p>
+                <p class="card-text"><a href="/dashboard/guilds/<%=guild.id%>" style="color: #310058;">Editar</a></p>
               </div>
             </div>
             <% } else { %>
